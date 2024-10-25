@@ -1,0 +1,93 @@
+/*
+
+Init
+
+*/
+
+@import url(https://fonts.bunny.net/css?family=instrument-sans:400,700);
+
+::-moz-selection {
+ background: rgba(254, 191, 0, 0.24);
+}
+
+::selection {
+ background: rgba(254, 191, 0, 0.24);
+}
+
+* {
+ box-sizing: border-box !important;
+ margin: 0 !important;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Instrument Sans', sans-serif;
+}
+
+h1{
+    font-size: 56px;
+    line-height: 64px;
+    padding-bottom: 88px;
+    text-align: center;
+}
+
+.cn{
+    width: 100%;
+    margin-left: 24px;
+    margin-right: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    margin: 56px!important;
+}
+
+/*
+
+Main grid
+
+*/
+
+.content-main-grid-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+
+    .img-box{
+        background-color: lightgray;
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+    }
+}
+
+.img-box img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/*
+
+Responsive
+
+*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .content-main-grid-wrapper{
+        grid-template-columns: 1fr;
+    }
+
+    body{
+        margin: 24px!important;
+    }
+
+    h1{
+        font-size: 48px;
+    }
+  }
+
+  
